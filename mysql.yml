@@ -1,0 +1,18 @@
+services:
+  mmysql:
+    image: mysql
+    container_name: mysqldb
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: teste
+      MYSQL_USER: lucas
+      MYSQL_PASSWORD: lucas1234
+    ports:
+      - "3306:3306"
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8081:8080
