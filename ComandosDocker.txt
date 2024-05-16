@@ -1,0 +1,9 @@
+
+Estando na pasta raiz da aplicação digite os seguintes comandos
+mvn clean install
+docker build -t apiperson .
+docker-compose up
+docker run apiperson
+
+
+
