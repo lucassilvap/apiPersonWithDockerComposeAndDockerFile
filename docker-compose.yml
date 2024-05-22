@@ -15,7 +15,7 @@ services:
       - SPRING_DATASOURCE_URL=jdbc:mysql://db:3306/teste
       - SPRING_DATASOURCE_USERNAME=lucas
       - SPRING_DATASOURCE_PASSWORD=lucas1234
-      - SPRING_JPA_HIBERNATE_DDL_AUTO=update
+      - SPRING_JPA_HIBERNATE_DDL_AUTO=create-drop
       - SPRING_JPA_SHOW_SQL=true
     depends_on:
       - db

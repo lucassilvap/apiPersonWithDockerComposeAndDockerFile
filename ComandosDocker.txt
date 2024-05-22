@@ -1,10 +1,13 @@
-
 Estando na pasta raiz da aplicação digite os seguintes comandos
 mvn clean install
 docker build -t apiperson .
-docker-compose up
-docker run apiperson
+docker-compose up -d --build
+docker run apiperson 
 
-teste
+Comandos Anderson
+mvn clean install 
+docker-compose up -d --build
 
-
+netstat -a -n -o | findstr 9090
+Taskkill /PID  14980 /F
+ 8068
